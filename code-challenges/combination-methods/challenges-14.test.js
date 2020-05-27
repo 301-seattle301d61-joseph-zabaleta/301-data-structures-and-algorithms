@@ -143,7 +143,7 @@ http://www.insecure.com returns false because the URL is not secure
 https://secure.com returns true because the URL is secure
 https:/missingslash.org returns false because the URL is malformed
 ------------------------------------------------------------------------------------------------ */
-const isSecure = (url) =>  (/^(https)/g).test(url);
+const isSecure = (url) =>  url.includes('https://');
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5 - Stretch Goal
